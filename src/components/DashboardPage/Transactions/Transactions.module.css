@@ -1,0 +1,218 @@
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.transactions {
+  overflow-y: auto;
+}
+
+.transactionsTable {
+  position: relative;
+  margin: 0 auto;
+  max-width: 765px;
+  border-spacing: 0;
+  /* border-collapse: separate !important; */
+
+  font-family: 'Circe', sans-serif;
+  line-height: 1.5;
+}
+
+.tableHeaderData {
+  padding: 15px 20px;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  font-size: 18px;
+  background-color: #fff;
+  transition: background-color 250ms;
+}
+
+.tableHeaderData:first-child {
+  border-radius: 29px 0 0 29px;
+}
+
+.tableHeaderData:last-child {
+  border-radius: 0 29px 29px 0;
+}
+
+.tableHeaderData[data-flag]:hover,
+.tableHeaderDataRight[data-flag]:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+
+.tableHeaderDataRight {
+  composes: tableHeaderData;
+  text-align: right;
+}
+
+.tableHeaderDataRight:last-child {
+  width: 85px;
+}
+
+.tableBody {
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.tableData {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #DCDCDF;
+  border-top: 1px solid #fff;
+}
+
+.firstTableData {
+  border-top: none;
+}
+
+.lastTableData {
+  border-bottom: none;
+}
+
+.tableDataRight {
+  composes: tableData;
+  text-align: right;
+}
+
+.tableDataIncome {
+  composes: tableDataRight;
+  font-weight: 700;
+  color: #24CCA7;
+}
+
+.tableDataExpense {
+  composes: tableDataRight;
+  font-weight: 700;
+  color: #FF6596;
+}
+
+.tableDataRight:last-child {
+  width: 85px;
+  padding: 15px 15px 15px 0px;
+}
+
+.editBtn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  vertical-align: bottom;
+  padding-top: 4px;
+  transition: 250ms;
+}
+
+.editBtn:last-child {
+  margin-left: 5px;
+}
+
+.editBtn:first-child:hover {
+  background-color: #24CCA7;
+}
+
+.editBtn:hover {
+  background-color: #FF6596;
+}
+
+.editBtnIcon {
+  display: inline-block;
+  transition: 250ms;
+}
+
+.editBtn:hover .editBtnIcon {
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
+  .transactions {
+    max-height: 60vh;
+  }
+
+  .tableHeaderDataRight:last-child {
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  .tableDataRight:last-child {
+    padding: 0;
+  }
+}
+
+/* MOBILE TABLE */
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.mobTransaction {
+  max-width: 410px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.transactionRowIncome {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px 8px;
+}
+
+.transactionRowIncome:not(:last-child) {
+  border-bottom: 1px solid #DCDCDF;
+}
+
+.transactionRowIncome::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #24CCA7;
+}
+
+.transactionRowExpense {
+  composes: transactionRowIncome;
+}
+
+.transactionRowExpense::before {
+  background-color: #FF6596;
+}
+
+.transactionHeader {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.transactionData {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.transactionDataIncome {
+  composes: transactionData;
+  font-weight: 700;
+  color: #24CCA7;
+}
+
+.transactionDataExpense{
+  composes: transactionData;
+  font-weight: 700;
+  color: #FF6596;
+}

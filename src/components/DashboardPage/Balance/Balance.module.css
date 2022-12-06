@@ -1,0 +1,43 @@
+.card {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .card {
+    padding: 8px 40px;
+    min-width: 256px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+.title {
+  font-family: Circe, sans-serif;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+  color: #a6a6a6;
+}
+
+.result {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0;
+  align-items: center;
+  color: #000000;
+}

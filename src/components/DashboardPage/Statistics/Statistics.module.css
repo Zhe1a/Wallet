@@ -1,0 +1,210 @@
+
+.statisticsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .statisticsBox {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.statisticsHeading {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 0.66;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+}
+
+.canvasBox {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .canvasBox {
+    width: 336px;
+
+    height: 336px;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .canvasBox {
+    width: 288px;
+    margin-bottom: 0;
+    margin-right: 32px;
+    height: 288px;
+  }
+}
+
+.canvasSumm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-weight: 700;
+  font-size: 18px;
+}
+/* @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .canvasSumm {
+    transform: translate(-50%, -100%);
+  }
+} */
+.selectBox {
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .selectBox {
+    max-width: 336px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .selectBox {
+    max-width: 395px;
+    display: flex;
+  }
+}
+.select {
+  width: 280px;
+  height: 50px;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.58;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .select {
+    width: 160px;
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .select {
+    width: 181px;
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+
+.select:last-child {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .select:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .select:last-child {
+    margin-right: 0;
+  }
+}
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+}
+.tableSummIncome {
+  text-align: right;
+}
+.tableSummExpence {
+  text-align: right;
+}
+.tableHeader {
+  font-size: 18px;
+  background-color: #fff;
+}
+.tableHeaderData {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.tableHeaderData:first-child {
+  border-radius: 29px 0 0 29px;
+}
+
+.tableHeaderData:last-child {
+  border-radius: 0 29px 29px 0;
+  text-align: right;
+}
+.tableData {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #dcdcdf;
+  border-top: 1px solid #fff;
+}
+.tableData:last-child {
+  text-align: right;
+}
+.tableData:first-child {
+  display: flex;
+  align-items: center;
+}
+.firstTableData {
+  border-top: none;
+}
+
+.lastTableData {
+  border-bottom: none;
+}
+.tableDataTotal {
+  border-bottom: none;
+  border-top: none;
+  font-weight: 700;
+}
+.tableDataExpenses {
+  border-bottom: none;
+  border-top: none;
+  color: rgba(255, 101, 150, 1);
+  font-weight: 700;
+}
+.tableDataIncome {
+  border-bottom: none;
+  border-top: none;
+  color: rgba(36, 204, 167, 1);
+  font-weight: 700;
+}
+.spanTd {
+  height: 24px;
+  width: 24px;
+  margin-right: 16px;
+}
+.colorSpan1 {
+  background-color: rgba(254, 208, 87, 1);
+}
+.colorSpan2 {
+  background-color: rgba(255, 216, 208, 1);
+}
+.colorSpan3 {
+  background-color: rgba(253, 148, 152, 1);
+}
+.colorSpan4 {
+  background-color: rgba(197, 186, 255, 1);
+}
+.colorSpan5 {
+  background-color: rgba(110, 120, 232, 1);
+}
+.colorSpan6 {
+  background-color: rgba(74, 86, 226, 1);
+}
+.colorSpan7 {
+  background-color: rgba(129, 225, 255, 1);
+}
+.colorSpan8 {
+  background-color: rgba(36, 204, 167, 1);
+}
+.colorSpan9 {
+  background-color: rgba(0, 113, 112, 1);
+}

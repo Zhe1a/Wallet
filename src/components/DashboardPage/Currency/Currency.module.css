@@ -1,0 +1,123 @@
+
+.container {
+    
+    color: #FFFFFF;
+    width: 393px;
+    height: 347px;
+    background-image: url("../../../images/currency/CurrencyBackGrnd.png");
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .container {
+        margin-left: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 336px;
+        height: 182px;
+        background-image: url("../../../images/currency/CurrencyBackGrnd_tab.png");
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .container {
+        flex-direction: column;
+        margin: auto;
+        width: 280px;
+        height: 174px;
+        background-image: url("../../../images/currency/CurrencyBackGrnd_mob.png");
+    }
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;;
+    list-style: none;
+    margin: 0;
+    padding-top: 17px;
+    padding-left: 44px;
+    padding-right: 64px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .list {
+        
+        padding-top: 14px;
+        padding-left: 20px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 767.99px) {
+    .list {
+
+        padding-top: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .item {
+        
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .item:not-first-child {
+        align-items: left;
+    }
+
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 36px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .title {
+        padding-bottom: 30px;
+}
+}
+
+@media screen and (max-width: 767.99px) {
+    .title {
+        padding-bottom: 26px;
+    }
+}
+
+.currency {
+    font: 16px;
+    display: flex;
+    padding-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .currency {
+        padding-bottom: 18px;
+}
+}
+
+@media screen and (max-width: 767.99px) {
+    .currency {   
+        padding-bottom: 20px;
+    }
+}
+
+.loader {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
