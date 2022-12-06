@@ -2,7 +2,7 @@
   "name": "wallet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Zhe1a.github.io/wallet/",
+  "homepage": "https://Zhe1a.github.io/wallet",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.3",
