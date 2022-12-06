@@ -65,7 +65,7 @@ export const fetchCurrentUser = createAsyncThunk(
       const { data } = await axios.get('users/current');
       return data;
     } catch (error) {
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
@@ -77,7 +77,7 @@ export const refreshBalance = createAsyncThunk(
       const { data } = await axios.get('users/current');
       return data.balance;
     } catch (error) {
-      return rejectWithValue(error.message);
+      return thunkAPI.rejectWithValue(error.message);
     }
   }
 );
