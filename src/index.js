@@ -10,7 +10,7 @@ import './stylesheet/fonts.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <BrowserRouter basename="/wallet">
+    <BrowserRouter basename="/Wallet">
       <PersistGate loading={null} persistor={persistor}>
         <App />
       </PersistGate>
